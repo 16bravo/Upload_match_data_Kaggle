@@ -6,10 +6,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
 
-chrome_path = 'chrome-driver/chromedriver'
+chrome_path = './chrome-driver/chromedriver'
 driver = webdriver.Chrome(service=ChromeService(executable_path=chrome_path))
 url = 'https://www.eloratings.net/latest'
-driver = webdriver.Chrome(executable_path='chrome-driver/chromedriver')
 driver.get(url)
 wait = WebDriverWait(driver, 10)  # Attendez jusqu'à 10 secondes au maximum
 table_element = wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'maintable')))
