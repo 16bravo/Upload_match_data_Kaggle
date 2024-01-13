@@ -32,6 +32,9 @@ jobs:
       - name: Install Selenium
         run: pip install selenium
 
+      - name: Install TEST
+        run: pip install undetected_chromedriver        
+
       - name: Create .kaggle directory
         run: mkdir -p /home/runner/.kaggle
 
