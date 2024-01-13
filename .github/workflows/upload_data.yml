@@ -30,10 +30,7 @@ jobs:
         run: pip install beautifulsoup4
 
       - name: Install Selenium
-        run: pip install selenium
-
-      - name: Install TEST
-        run: pip install undetected_chromedriver        
+        run: pip install selenium    
 
       - name: Create .kaggle directory
         run: mkdir -p /home/runner/.kaggle
