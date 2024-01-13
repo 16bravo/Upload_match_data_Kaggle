@@ -24,7 +24,7 @@ jobs:
         run: pip install pandas
 
       - name: Install BeautifulSoup
-        run: pip install beautifulsoup
+        run: pip install beautifulsoup4
 
       - name: Install Selenium
         run: pip install selenium
