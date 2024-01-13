@@ -5,6 +5,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
+import os
+os.chmod('chrome-driver/chromedriver', 0755)
 
 chrome_path = 'chrome-driver/chromedriver'
 driver = webdriver.Chrome(service=ChromeService(executable_path=chrome_path))
