@@ -1,7 +1,7 @@
 name: Upload Dataset Kaggle
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '17 * * * *'
 
 jobs:
   upload_data_kaggle:
