@@ -16,8 +16,17 @@ jobs:
         with:
           python-version: 3.x
 
-      - name: Install dependencies
+      - name: Install Kaggle
         run: pip install kaggle
+
+      - name: Install Pandas
+        run: pip install pandas
+
+      - name: Install BeautifulSoup
+        run: pip install beautifulsoup
+
+      - name: Install Selenium
+        run: pip install selenium
 
       - name: Create .kaggle directory
         run: mkdir -p /home/runner/.kaggle
@@ -32,10 +41,3 @@ jobs:
 
       - name: Update data in Kaggle
         run: kaggle datasets version -p ./dataset/. -m "Updated data"
-        
-      - name: Save dependency cache
-        uses: actions/cache@v2
-        with:
-          path: |
-            ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
