@@ -10,11 +10,11 @@ import pandas as pd
 chrome_options = Options()
 chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
-chrome_options.add_argument('--disable-dev-shm-usage')
+#chrome_options.add_argument('--disable-dev-shm-usage')
 
 chrome_path = './chrome-driver/chromedriver'
 #driver = webdriver.Chrome(service=ChromeService(executable_path=chrome_path))
-driver = webdriver.Chrome(chrome_path,chrome_options=chrome_options)
+driver = webdriver.Chrome(chrome_path,options=chrome_options)
 url = 'https://www.eloratings.net/latest'
 driver.get(url)
 wait = WebDriverWait(driver, 10)  # Attendez jusqu'à 10 secondes au maximum
