@@ -1,12 +1,11 @@
-name: DB Initialisation
-
+name: Upload Dataset Kaggle
 on:
   push:
     branches:
       - main
 
 jobs:
-  init_db:
+  upload_data_kaggle:
     runs-on: ubuntu-latest
 
     steps:
