@@ -31,7 +31,7 @@ jobs:
         env:
           KAGGLE_JSON: ${{ secrets.KAGGLE_JSON }}
 
-      - name: Run initialization script
+      - name: Update data in Kaggle
         if: steps.check-db.outputs.init_required == 'true'
         run: kaggle datasets version -p ../dataset/. -m "Updated data"
         
