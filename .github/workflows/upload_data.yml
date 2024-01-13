@@ -18,6 +18,9 @@ jobs:
           python-version: 3.x
 
       - name: Install Kaggle
+        run: google-chrome --version
+          
+      - name: Install Kaggle
         run: pip install kaggle
 
       - name: Install Pandas
