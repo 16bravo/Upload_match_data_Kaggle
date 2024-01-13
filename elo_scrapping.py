@@ -1,4 +1,3 @@
-import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
@@ -6,8 +5,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
-import spacy
-import sys
 
 chrome_path = './chrome-driver/chromedriver.exe'
 driver = webdriver.Chrome(service=ChromeService(executable_path=chrome_path))
