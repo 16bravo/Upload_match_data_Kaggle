@@ -34,7 +34,7 @@ jobs:
 
       - name: Run initialization script
         if: steps.check-db.outputs.init_required == 'true'
-        run: kaggle datasets version -p . -m "Updated data"
+        run: kaggle datasets version -p ../dataset/. -m "Updated data"
         
       - name: Save dependency cache
         uses: actions/cache@v2
