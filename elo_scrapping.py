@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
 
-chrome_path = './chrome-driver/chromedriver.exe'
+chrome_path = 'chrome-driver/chromedriver.exe'
 driver = webdriver.Chrome(service=ChromeService(executable_path=chrome_path))
 url = 'https://www.eloratings.net/latest'
 driver.get(url)
