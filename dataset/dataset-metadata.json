@@ -1,9 +1,17 @@
 {
-  "title": "Dataset_test",
-  "id": "patateriedata/dataset-test-001",
+  "title": "All international football results from 1872 to today",
+  "subtitle": "An automatically updated dataset of almost 50,000 international football results",
+  "description": "",
+  "id": "patateriedata/all-international-football-results-from-1872-to-today",
   "licenses": [
     {
       "name": "CC0-1.0"
     }
+  ],
+  "keywords": [
+    "football",
+    "resuts",
+    "matches",
+    "international"
   ]
 }
