@@ -27,6 +27,9 @@ jobs:
         env:
           KAGGLE_JSON: ${{ secrets.KAGGLE_JSON }}
 
+      - name: Scrapping data from EloRatings.Net
+        run: python scripts/elo_scrapping.py
+
       - name: Update data in Kaggle
         run: kaggle datasets version -p ./dataset/. -m "Updated data"
         
